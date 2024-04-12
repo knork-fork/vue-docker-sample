@@ -7,6 +7,14 @@ const count = ref(0)
 </script>
 
 <template>
+
+<v-breadcrumbs bg-color="info" :items="['Foo', 'Bar', 'Fizz']"></v-breadcrumbs>
+
+<v-switch label="Switch"></v-switch>
+
+<v-time-picker></v-time-picker>
+    
+<v-btn color="primary" variant="tonal">Click Mee</v-btn>
   <h1>{{ msg }}</h1>
 
   <div class="card">
