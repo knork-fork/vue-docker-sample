@@ -3,7 +3,7 @@
 ###############################################################################
 version: '3.1'
 services:
-    #nginx webserver
+    # nginx webserver
     webserver:
         container_name: vuesample-webserver
         image: 'nginx:alpine'
@@ -23,5 +23,15 @@ services:
             - '.:/application'
             - './phpdocker/php-fpm/php-ini-overrides.ini:/etc/php/8.3/fpm/conf.d/99-overrides.ini'
 
-    # vue frontend
-    # to-do
+    # vue frontend with vite
+    vue-frontend:
+        container_name: vuesample-frontend
+        image: node:18-alpine
+        working_dir: /application
+        volumes:
+            - './vueapp_vite:/application'
+        ports:
+            - '60004:3000'
+        environment:
+            - NODE_ENV=development
+        command: sh -c "npm install && npm run dev -- --host"
