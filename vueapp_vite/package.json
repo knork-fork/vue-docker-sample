@@ -12,12 +12,15 @@
     "@mdi/font": "^7.4.47",
     "@vue/shared": "^3.4.21",
     "vue": "^3.4.21",
-    "vuetify": "^3.6.0-alpha.1"
+    "vue-router": "^4.3.0",
+    "vuetify": "^3.0.5"
   },
   "devDependencies": {
+    "@types/node": "^20.12.7",
     "@vitejs/plugin-vue": "^5.0.4",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
+    "vite-plugin-vuetify": "^2.0.3",
     "vue-tsc": "^2.0.6"
   }
 }

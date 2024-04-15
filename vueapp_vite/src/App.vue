@@ -1,6 +1,6 @@
 <script setup lang="ts">
 //import HelloWorld from './components/HelloWorld.vue';
-import ExampleGraph from './components/ExampleGraph.vue';
+//import ExampleGraph from './components/ExampleGraph.vue';
 </script>
 
 <template>
@@ -12,8 +12,9 @@ import ExampleGraph from './components/ExampleGraph.vue';
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="This is a test message." />-->
-  <ExampleGraph />
+  <HelloWorld msg="This is a test message." />
+  <ExampleGraph />-->
+  <router-view />
 </template>
 
 <style scoped>
