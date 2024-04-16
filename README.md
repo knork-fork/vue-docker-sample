@@ -15,5 +15,5 @@ http://localhost:60004
 
 Backend is available at:
 ```
-http://localhost:60003
+http://localhost:60004/api/
 ```
