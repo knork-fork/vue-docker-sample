@@ -23,6 +23,11 @@ const routes: RouteRecordRaw[] = [
         }
       },
       {
+        path: "example_api",
+        name: "example api",
+        component: () => import("../views/ExampleApiView.vue")
+      },
+      {
         path: "/:pathMatch(.*)*",
         name: "NotFound",
         component: () => import("../views/NotFound.vue")
