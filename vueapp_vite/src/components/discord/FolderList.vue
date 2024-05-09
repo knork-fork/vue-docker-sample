@@ -21,6 +21,6 @@ import NewFolder from '@/components/discord/NewFolder.vue';
 <style scoped>
 .folder-list-hr {
     border: 1px solid #313338;
-    margin: 14px;
+    margin: 10px;
 }
 </style>

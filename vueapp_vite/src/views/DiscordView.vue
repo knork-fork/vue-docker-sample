@@ -89,6 +89,7 @@ import Search from "@/components/discord/Search.vue";
     justify-content: space-between;
     /*border-bottom: 2px solid #4f545c;*/
     height:48px;
+    min-height:48px;
     box-shadow: 0px 1.5px 0px rgba(0, 0, 0, 0.25);
 }
 
