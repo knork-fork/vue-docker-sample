@@ -11,6 +11,7 @@ import MessageSeparator from '@/components/discord/MessageSeparator.vue';
         <Message messageContent="svaki item ima cijenu koju definiraju igraci" messageAuthor="gospodin kuča" timestamp="19:07" :showHeader = "false"/>
         <Message messageContent="ali se cijene varijabilno mijenjaju" messageAuthor="gospodin kuča" timestamp="19:07" :showHeader = "false"/>
         <Message messageContent="to ne" messageAuthor="gospodin kuča" timestamp="19:07" :showHeader = "true"/>
+        <MessageSeparator />
         <Message messageContent="imas ingame stock trading?" messageAuthor="Bixxo" timestamp="19:06" :showHeader = "true"/>
         <MessageSeparator />
         <Message messageContent=".366 je neki kurac koji su stvorili" messageAuthor="gospodin kuča" timestamp="19:05" :showHeader = "false"/>
