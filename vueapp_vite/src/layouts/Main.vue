@@ -18,6 +18,7 @@ html, body, #app, .v-application--wrap {
   height: 100%;
   width: 100%;
   margin: 0;
+  overflow: hidden !important;
 }
 
 .v-layout {
