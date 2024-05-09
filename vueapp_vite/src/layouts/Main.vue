@@ -11,3 +11,16 @@
 
 <script setup lang="ts">
 </script>
+
+<style>
+/* This ensures that the main layout fills the height and width of the viewport */
+html, body, #app, .v-application--wrap {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.v-layout {
+  height: 100%;
+}
+</style>

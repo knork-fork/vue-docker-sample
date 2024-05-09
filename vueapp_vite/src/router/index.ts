@@ -28,6 +28,11 @@ const routes: RouteRecordRaw[] = [
         component: () => import("../views/ExampleApiView.vue")
       },
       {
+        path: "discord",
+        name: "copy of discord layout",
+        component: () => import("../views/DiscordView.vue")
+      },
+      {
         path: "/:pathMatch(.*)*",
         name: "NotFound",
         component: () => import("../views/NotFound.vue")

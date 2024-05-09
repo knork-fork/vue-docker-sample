@@ -19,6 +19,9 @@ class PrimitiveRoutes
             '/test' => new Route(TestController::class, 'test'),
             '/api_1' => new Route(ApiExampleController::class, 'api_response_1'),
             '/api_2' => new Route(ApiExampleController::class, 'api_response_2'),
+            '/folders' => new Route(ApiExampleController::class, 'api_response_folders'),
+            '/channels' => new Route(ApiExampleController::class, 'api_response_channels'),
+            '/messages' => new Route(ApiExampleController::class, 'api_response_messages'),
         ];
     }
 
