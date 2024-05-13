@@ -18,7 +18,7 @@ defineProps<{
     border-radius: 25px;
     transition: border-radius 0.2s;
     margin: auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     width: 50px;
     height: 50px;
     background-color: #313338;

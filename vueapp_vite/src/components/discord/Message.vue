@@ -87,5 +87,6 @@ gap between ungrouped messages: 18px (2px + extra 16px from MessageSeparator)
     padding-top: 1px;
     padding-bottom: 1px;
     padding-left: 73px;
+    color: white;
 }
 </style>

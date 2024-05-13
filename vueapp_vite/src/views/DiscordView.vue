@@ -47,6 +47,7 @@ import Search from "@/components/discord/Search.vue";
     /*border: 1px solid black;*/
     background-color: #1e1f22;
     width: 75px;
+    min-width: 75px;
 }
 
 .middle-panel {
@@ -57,6 +58,7 @@ import Search from "@/components/discord/Search.vue";
     /*border: 1px solid black;*/
     background-color: #2a2d31;
     width: 240px;
+    min-width: 240px;
 }
 
 .right-panel {
