@@ -25,7 +25,7 @@ import Search from "@/components/discord/Search.vue";
             <Search />
         </div>
         <MessageList class="message-list" />
-        <MessageInput class="message-input" />
+        <MessageInput />
     </div>
   </div>
 </template>
@@ -100,14 +100,5 @@ import Search from "@/components/discord/Search.vue";
     overflow-y: auto; /* Enables scrolling */
     display: flex;
     flex-direction: column-reverse; /* Newest messages at the bottom */
-}
-
-.message-input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    height: 90px;
-    min-height: 90px;
 }
 </style>
