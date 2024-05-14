@@ -4,19 +4,19 @@ import EmojiButton from "@/components/discord/buttons/EmojiButton.vue";
 </script>
 
 <template>
-    <div class="message-input-ribbon">
-        <div class="message-input">
-            <div class="input-file">
-                <AttachFileButton />
-            </div>
-            <div class="input-text">
-                Message #general
-            </div>
-            <div class="input-emoji">
-                <EmojiButton />
-            </div>
-        </div>
+  <div class="message-input-ribbon">
+    <div class="message-input">
+      <div class="input-file">
+        <AttachFileButton />
+      </div>
+      <div class="input-text">
+        Message #general
+      </div>
+      <div class="input-emoji">
+        <EmojiButton />
+      </div>
     </div>
+  </div>
 </template>
 
 <style scoped>

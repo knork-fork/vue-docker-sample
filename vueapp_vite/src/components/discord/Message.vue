@@ -8,17 +8,17 @@ defineProps<{
 </script>
 
 <template>
-    <div class="message-item">
-        <div v-if="showHeader" class="message-header">
-            <span class="profile-picture"></span>
-            <span class="author">{{ messageAuthor }}</span>
-            <span class="header-timestamp">Today at {{ timestamp }}</span>
-        </div>
-        <span v-else class="message-timestamp">{{ timestamp }}</span>
-        <div class="message-body">
-            {{ messageContent }}
-        </div>
+  <div class="message-item">
+    <div v-if="showHeader" class="message-header">
+      <span class="profile-picture"></span>
+      <span class="author">{{ messageAuthor }}</span>
+      <span class="header-timestamp">Today at {{ timestamp }}</span>
     </div>
+    <span v-else class="message-timestamp">{{ timestamp }}</span>
+    <div class="message-body">
+      {{ messageContent }}
+    </div>
+  </div>
 </template>
 
 <style scoped>

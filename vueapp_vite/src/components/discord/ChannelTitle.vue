@@ -7,12 +7,14 @@ import ChannelHashtag from "@/components/discord/ChannelHashtag.vue";
 </script>
 
 <template>
-    <div class="channel-title">
-        <ChannelHashtag />
-        {{ channelName }}
-        <div style="border-left:1px solid #3d3d3d;height:50%"></div>
-        <div class="channel-description"> {{ channelDescription }} </div>
+  <div class="channel-title">
+    <ChannelHashtag />
+    {{ channelName }}
+    <div style="border-left:1px solid #3d3d3d;height:50%"></div>
+    <div class="channel-description">
+      {{ channelDescription }}
     </div>
+  </div>
 </template>
 
 <style scoped>

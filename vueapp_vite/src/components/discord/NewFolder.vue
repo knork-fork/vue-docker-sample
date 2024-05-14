@@ -2,8 +2,8 @@
 </script>
 
 <template>
-    <div class="folder-new">
-    </div>
+  <div class="folder-new">
+  </div>
 </template>
 
 <style scoped>

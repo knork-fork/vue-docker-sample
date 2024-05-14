@@ -28,9 +28,9 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="emoji-button" @mouseover="changeEmoji">
-        <i :class="['em', currentEmoji]" aria-role="presentation" :aria-label="currentEmoji.toUpperCase()"></i>
-    </div>
+  <div class="emoji-button" @mouseover="changeEmoji">
+    <i :class="['em', currentEmoji]" aria-role="presentation" :aria-label="currentEmoji.toUpperCase()"></i>
+  </div>
 </template>
 
 <style scoped>

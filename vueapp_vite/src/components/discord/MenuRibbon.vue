@@ -17,8 +17,8 @@ export default defineComponent({
 
 
 <template>
-    <div class="menu-button">
-        <!--
+  <div class="menu-button">
+    <!--
         TO-DO
         <v-menu>
           <template v-slot:activator="{ props }">
@@ -42,7 +42,7 @@ export default defineComponent({
           </v-list>
         </v-menu>
         -->
-    </div>
+  </div>
 </template>
 
 <style scoped>

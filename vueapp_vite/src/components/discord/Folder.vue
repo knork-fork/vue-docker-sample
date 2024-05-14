@@ -6,9 +6,9 @@ defineProps<{
 </script>
 
 <template>
-    <div :class="['folder-item', { 'folder-item-selected': selected }]">
-        {{ folderName }}
-    </div>
+  <div :class="['folder-item', { 'folder-item-selected': selected }]">
+    {{ folderName }}
+  </div>
 </template>
 
 <style scoped>

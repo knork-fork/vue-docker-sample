@@ -12,20 +12,20 @@ import Search from "@/components/discord/Search.vue";
 <template>
   <div class="main-app">
     <div class="left-panel">
-        <FolderList class="folder-list" />
+      <FolderList class="folder-list" />
     </div>
     <div class="middle-panel">
-        <FolderTitle folderName="Folder 1" />
-        <ChannelList class="channel-list" />
-        <MenuRibbon class="menu-ribbon" />
+      <FolderTitle folder-name="Folder 1" />
+      <ChannelList class="channel-list" />
+      <MenuRibbon class="menu-ribbon" />
     </div>
     <div class="right-panel">
-        <div class="app-ribbon">
-            <ChannelTitle channelName="general" channelDescription="Channel description goes here" />
-            <Search />
-        </div>
-        <MessageList class="message-list" />
-        <MessageInput />
+      <div class="app-ribbon">
+        <ChannelTitle channel-name="general" channel-description="Channel description goes here" />
+        <Search />
+      </div>
+      <MessageList class="message-list" />
+      <MessageInput />
     </div>
   </div>
 </template>

@@ -13,12 +13,11 @@ onMounted(async () => {
 </script>
 
 <template>
-    <div>
-        <p>This is an example for API:</p>
-        <div v-for="(message, index) in messages" :key="index">
-            <ExampleApiMessage :data="message" />
-            <br>
-        </div>
+  <div>
+    <p>This is an example for API:</p>
+    <div v-for="(message, index) in messages" :key="index">
+      <ExampleApiMessage :data="message" />
+      <br>
     </div>
-    
+  </div>
 </template>

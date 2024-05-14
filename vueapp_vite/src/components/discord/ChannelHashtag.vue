@@ -2,8 +2,8 @@
 </script>
 
 <template>
-    <div class="gg-hashtag">
-    </div>
+  <div class="gg-hashtag">
+  </div>
 </template>
 
 <style scoped>

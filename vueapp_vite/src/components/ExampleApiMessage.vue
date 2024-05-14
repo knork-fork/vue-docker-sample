@@ -10,10 +10,10 @@ const props = defineProps({
 </script>
 
 <template>
-    <v-card>
-        <v-card-title>User: {{ props.data.user }}</v-card-title>
-        <v-card-text>
-            <p>{{ props.data.message }}</p>
-        </v-card-text>
-    </v-card>
+  <v-card>
+    <v-card-title>User: {{ props.data.user }}</v-card-title>
+    <v-card-text>
+      <p>{{ props.data.message }}</p>
+    </v-card-text>
+  </v-card>
 </template>
