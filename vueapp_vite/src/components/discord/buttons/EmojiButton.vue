@@ -1,30 +1,21 @@
-<script lang="ts">
-import { defineComponent, ref } from 'vue';
+<script setup lang="ts">
+import { ref } from 'vue';
 import { emojiList } from '@/preloadEmojis';
 
-export default defineComponent({
-    setup() {
-        const currentEmoji = ref<string>(Object.keys(emojiList)[0]);
+const currentEmoji = ref<string>(Object.keys(emojiList)[0]);
 
-        function changeEmoji() {
-            let randomIndex;
-            let newEmoji;
-            const keys = Object.keys(emojiList);
+function changeEmoji() {
+    let randomIndex;
+    let newEmoji;
+    const keys = Object.keys(emojiList);
 
-            do {
-                randomIndex = Math.floor(Math.random() * keys.length);
-                newEmoji = keys[randomIndex];
-            } while (newEmoji === currentEmoji.value);
+    do {
+        randomIndex = Math.floor(Math.random() * keys.length);
+        newEmoji = keys[randomIndex];
+    } while (newEmoji === currentEmoji.value);
 
-            currentEmoji.value = newEmoji;
-        }
-
-        return {
-            currentEmoji,
-            changeEmoji,
-        };
-    },
-});
+    currentEmoji.value = newEmoji;
+}
 </script>
 
 <template>
