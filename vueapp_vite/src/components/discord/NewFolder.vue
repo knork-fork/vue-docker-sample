@@ -1,8 +1,7 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div class="folder-new" />
+    <div class="folder-new" />
 </template>
 
 <style scoped>
@@ -48,5 +47,4 @@
 .folder-new:hover::after {
     background-color: white;
 }
-
 </style>

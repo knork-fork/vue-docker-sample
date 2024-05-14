@@ -1,8 +1,7 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div class="message-separator" />
+    <div class="message-separator" />
 </template>
 
 <style scoped>

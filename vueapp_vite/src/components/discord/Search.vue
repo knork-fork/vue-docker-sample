@@ -1,6 +1,6 @@
 <template>
-  <div />
-  <!--
+    <div />
+    <!--
         TO-DO
     <v-card
         width="200px"
@@ -19,8 +19,8 @@
       </v-card-text>
     </v-card>-->
 </template>
-  <script>
-    /*export default {
+<script>
+/*export default {
       data: () => ({
         loaded: false,
         loading: false,
@@ -37,4 +37,4 @@
         },
       },
     }*/
-  </script>
+</script>

@@ -1,8 +1,7 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div class="gg-hashtag" />
+    <div class="gg-hashtag" />
 </template>
 
 <style scoped>
@@ -10,7 +9,7 @@
     box-sizing: border-box;
     position: relative;
     display: block;
-    transform: scale(var(--ggs,1)) skew(-10deg, 0deg);
+    transform: scale(var(--ggs, 1)) skew(-10deg, 0deg);
     width: 8px;
     height: 16px;
     border-left: 2px solid;
@@ -18,7 +17,7 @@
     color: #7f848d;
 }
 .gg-hashtag::before {
-    content: "";
+    content: '';
     display: block;
     box-sizing: border-box;
     position: absolute;

@@ -2,23 +2,22 @@
 import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
-  setup() {
-    const items = ref([
-      { title: 'Click Me' },
-      { title: 'Click Me' },
-      { title: 'Click Me' },
-      { title: 'Click Me 2' },
-    ]);
+    setup() {
+        const items = ref([
+            { title: 'Click Me' },
+            { title: 'Click Me' },
+            { title: 'Click Me' },
+            { title: 'Click Me 2' },
+        ]);
 
-    return { items };
-  }
+        return { items };
+    },
 });
 </script>
 
-
 <template>
-  <div class="menu-button">
-    <!--
+    <div class="menu-button">
+        <!--
         TO-DO
         <v-menu>
           <template v-slot:activator="{ props }">
@@ -42,12 +41,12 @@ export default defineComponent({
           </v-list>
         </v-menu>
         -->
-  </div>
+    </div>
 </template>
 
 <style scoped>
 .menu-button {
-    height:53px;
+    height: 53px;
     min-height: 53px;
     display: flex;
     justify-content: center;

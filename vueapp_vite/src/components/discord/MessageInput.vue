@@ -1,22 +1,20 @@
 <script setup lang="ts">
-import AttachFileButton from "@/components/discord/buttons/AttachFileButton.vue";
-import EmojiButton from "@/components/discord/buttons/EmojiButton.vue";
+import AttachFileButton from '@/components/discord/buttons/AttachFileButton.vue';
+import EmojiButton from '@/components/discord/buttons/EmojiButton.vue';
 </script>
 
 <template>
-  <div class="message-input-ribbon">
-    <div class="message-input">
-      <div class="input-file">
-        <AttachFileButton />
-      </div>
-      <div class="input-text">
-        Message #general
-      </div>
-      <div class="input-emoji">
-        <EmojiButton />
-      </div>
+    <div class="message-input-ribbon">
+        <div class="message-input">
+            <div class="input-file">
+                <AttachFileButton />
+            </div>
+            <div class="input-text">Message #general</div>
+            <div class="input-emoji">
+                <EmojiButton />
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <style scoped>
@@ -69,7 +67,6 @@ import EmojiButton from "@/components/discord/buttons/EmojiButton.vue";
     min-width: 56px;
     height: 100%;
 }
-
 </style>
 
 <!--<template>

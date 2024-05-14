@@ -1,16 +1,16 @@
 <script setup lang="ts">
-defineProps<{ 
-    channelName: string,
-    selected: boolean
+defineProps<{
+    channelName: string;
+    selected: boolean;
 }>();
-import ChannelHashtag from "@/components/discord/ChannelHashtag.vue";
+import ChannelHashtag from '@/components/discord/ChannelHashtag.vue';
 </script>
 
 <template>
-  <div :class="['channel-item', { 'channel-item-selected': selected }]">
-    <ChannelHashtag />
-    {{ channelName }}
-  </div>
+    <div :class="['channel-item', { 'channel-item-selected': selected }]">
+        <ChannelHashtag />
+        {{ channelName }}
+    </div>
 </template>
 
 <style scoped>

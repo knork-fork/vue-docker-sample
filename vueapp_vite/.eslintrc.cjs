@@ -7,7 +7,12 @@ module.exports = {
       node: true,
       es2022: true
     },
-    extends: ["eslint:recommended", "plugin:vue/vue3-recommended", "@vue/typescript/recommended"],
+    extends: [
+        "eslint:recommended",
+        "plugin:vue/vue3-recommended",
+        "@vue/typescript/recommended",
+        "plugin:prettier/recommended",
+    ],
     parserOptions: {
       ecmaVersion: 2020
     },

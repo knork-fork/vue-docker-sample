@@ -1,5 +1,5 @@
-import { ExampleApiMessageModel } from "@/models/ExampleMessage";
+import { ExampleApiMessageModel } from '@/models/ExampleMessage';
 
 export interface ExampleMessageServiceInterface {
-  getMessages(): Promise<ExampleApiMessageModel[]>;
+    getMessages(): Promise<ExampleApiMessageModel[]>;
 }

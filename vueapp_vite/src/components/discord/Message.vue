@@ -1,28 +1,34 @@
 <script setup lang="ts">
-defineProps<{ 
-    messageContent: string,
-    messageAuthor: string,
-    timestamp: string,
-    showHeader: boolean
+defineProps<{
+    messageContent: string;
+    messageAuthor: string;
+    timestamp: string;
+    showHeader: boolean;
 }>();
 </script>
 
 <template>
-  <div class="message-item">
-    <div v-if="showHeader" class="message-header">
-      <span class="profile-picture" />
-      <span class="author">{{ messageAuthor }}</span>
-      <span class="header-timestamp">Today at {{ timestamp }}</span>
+    <div class="message-item">
+        <div
+            v-if="showHeader"
+            class="message-header"
+        >
+            <span class="profile-picture" />
+            <span class="author">{{ messageAuthor }}</span>
+            <span class="header-timestamp">Today at {{ timestamp }}</span>
+        </div>
+        <span
+            v-else
+            class="message-timestamp"
+            >{{ timestamp }}</span
+        >
+        <div class="message-body">
+            {{ messageContent }}
+        </div>
     </div>
-    <span v-else class="message-timestamp">{{ timestamp }}</span>
-    <div class="message-body">
-      {{ messageContent }}
-    </div>
-  </div>
 </template>
 
 <style scoped>
-
 /*
 gap between grouped messages: 2px
 gap between ungrouped messages: 18px (2px + extra 16px from MessageSeparator)
@@ -32,7 +38,7 @@ gap between ungrouped messages: 18px (2px + extra 16px from MessageSeparator)
     display: flex;
     flex-direction: column;
     margin-bottom: 2px;
-    margin-right:16px;
+    margin-right: 16px;
 }
 
 .message-item:hover {
@@ -51,7 +57,7 @@ gap between ungrouped messages: 18px (2px + extra 16px from MessageSeparator)
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    position:absolute;
+    position: absolute;
     margin-top: 25px;
     margin-left: 16px;
 }
@@ -70,7 +76,7 @@ gap between ungrouped messages: 18px (2px + extra 16px from MessageSeparator)
 }
 
 .message-timestamp {
-    position:absolute;
+    position: absolute;
     color: #9ea2a8;
     font-size: 10px;
     margin-top: 6px;

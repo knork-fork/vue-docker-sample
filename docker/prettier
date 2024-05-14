@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker exec -it vuesample-frontend npx prettier /application/src --write "$@"

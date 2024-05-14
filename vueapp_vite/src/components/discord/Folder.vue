@@ -1,14 +1,14 @@
 <script setup lang="ts">
-defineProps<{ 
-    folderName: string,
-    selected: boolean
-}>()
+defineProps<{
+    folderName: string;
+    selected: boolean;
+}>();
 </script>
 
 <template>
-  <div :class="['folder-item', { 'folder-item-selected': selected }]">
-    {{ folderName }}
-  </div>
+    <div :class="['folder-item', { 'folder-item-selected': selected }]">
+        {{ folderName }}
+    </div>
 </template>
 
 <style scoped>
@@ -28,7 +28,6 @@ defineProps<{
     justify-content: center;
     font-size: 14px;
     font-weight: bold;
-
 }
 
 .folder-item-selected {
