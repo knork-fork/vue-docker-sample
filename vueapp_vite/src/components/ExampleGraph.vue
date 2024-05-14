@@ -21,7 +21,7 @@
         line-width="2"
         padding="16"
         height="150" 
-      ></v-sparkline>
+      />
     </v-sheet>
   
     <v-card-text class="pt-0">
@@ -31,7 +31,7 @@
       <div class="subheading font-weight-light text-grey">
         Last Campaign Performance
       </div>
-      <v-divider class="my-2"></v-divider>
+      <v-divider class="my-2" />
       <v-icon
         class="me-2"
         size="small"

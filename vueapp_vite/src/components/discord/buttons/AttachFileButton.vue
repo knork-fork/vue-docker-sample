@@ -1,5 +1,5 @@
 <template>
-  <div class="attach-file-button"></div>
+  <div class="attach-file-button" />
 </template>
 
 <style scoped>

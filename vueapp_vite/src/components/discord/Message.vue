@@ -10,7 +10,7 @@ defineProps<{
 <template>
   <div class="message-item">
     <div v-if="showHeader" class="message-header">
-      <span class="profile-picture"></span>
+      <span class="profile-picture" />
       <span class="author">{{ messageAuthor }}</span>
       <span class="header-timestamp">Today at {{ timestamp }}</span>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div />
   <!--
         TO-DO
     <v-card

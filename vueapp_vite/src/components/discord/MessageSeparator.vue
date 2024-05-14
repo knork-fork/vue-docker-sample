@@ -2,8 +2,7 @@
 </script>
 
 <template>
-  <div class="message-separator">
-  </div>
+  <div class="message-separator" />
 </template>
 
 <style scoped>

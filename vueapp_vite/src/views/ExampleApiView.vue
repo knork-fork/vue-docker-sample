@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ExampleMessageService } from "@/api/services/ExampleMessage";
 import ExampleApiMessage from "@/components/ExampleApiMessage.vue";
-import { ExampleApiMessageModel } from "@/models/ExampleMessage";
+//import { ExampleApiMessageModel } from "@/models/ExampleMessage";
 import { ref, onMounted } from 'vue';
 
 const exampleMessageService = new ExampleMessageService();

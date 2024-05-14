@@ -29,7 +29,7 @@ export default defineComponent({
 
 <template>
   <div class="emoji-button" @mouseover="changeEmoji">
-    <i :class="['em', currentEmoji]" aria-role="presentation" :aria-label="currentEmoji.toUpperCase()"></i>
+    <i :class="['em', currentEmoji]" aria-role="presentation" :aria-label="currentEmoji.toUpperCase()" />
   </div>
 </template>
 
