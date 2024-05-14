@@ -1,34 +1,38 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { emojiList } from '@/preloadEmojis';
 
-const currentEmoji = ref<string>(Object.keys(emojiList)[0]);
+const emojiCount = 77;
+const emojisPerRow = 20;
+const emojiPixelOffset = 24;
+const emojiHoverPixelOffset = 28;
 
-function changeEmoji() {
-    let randomIndex;
-    let newEmoji;
-    const keys = Object.keys(emojiList);
+const defaultPosition = ref('0px 0px');
+const hoverPosition = ref('0px 0px');
 
-    do {
-        randomIndex = Math.floor(Math.random() * keys.length);
-        newEmoji = keys[randomIndex];
-    } while (newEmoji === currentEmoji.value);
+changeEmoji();
 
-    currentEmoji.value = newEmoji;
+const backgroundPositionRef = ref(defaultPosition.value);
+
+function changeEmoji(): void {
+    const randomIndex = Math.floor(Math.random() * emojiCount);
+    const row = Math.floor(randomIndex / emojisPerRow);
+    const column = randomIndex % emojisPerRow;
+
+    defaultPosition.value = `-${column * emojiPixelOffset}px -${row * emojiPixelOffset}px`;
+    hoverPosition.value = `-${column * emojiHoverPixelOffset}px -${row * emojiHoverPixelOffset}px`;
 }
 </script>
 
 <template>
     <div
         class="emoji-button"
-        @mouseover="changeEmoji"
-    >
-        <i
-            :class="['em', currentEmoji]"
-            aria-role="presentation"
-            :aria-label="currentEmoji.toUpperCase()"
-        />
-    </div>
+        :style="{ backgroundPosition: backgroundPositionRef }"
+        @mouseover="backgroundPositionRef = hoverPosition"
+        @mouseleave="
+            changeEmoji();
+            backgroundPositionRef = defaultPosition;
+        "
+    ></div>
 </template>
 
 <style scoped>
@@ -37,23 +41,19 @@ function changeEmoji() {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 22px;
-    width: 22px;
-    font-size: 22px;
-    /*background-color: #b4bac0;*/
-    border-radius: 11px;
-    filter: grayscale(1);
+    height: 24px;
+    width: 24px;
+    filter: brightness(2);
+    background-image: url('@/assets/emoji_atlas_greyscale.png');
+    background-size: 480px 96px; /* scaled down from 960x192 */
+    background-repeat: no-repeat;
 }
 
 .emoji-button:hover {
-    /*background-color: #dadee1;*/
-    filter: grayscale(0);
-    font-size: 26px;
-    height: 26px;
-    width: 26px;
-    transition:
-        height 0.2s,
-        width 0.2s,
-        font-size 0.2s;
+    filter: grayscale(0) brightness(1);
+    background-image: url('@/assets/emoji_atlas.png');
+    height: 28px;
+    width: 28px;
+    background-size: 560px 112px; /* scaled down from 960x192 */
 }
 </style>
