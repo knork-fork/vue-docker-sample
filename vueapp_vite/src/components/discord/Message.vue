@@ -67,13 +67,13 @@ gap between ungrouped messages: 18px (2px + extra 16px from MessageSeparator)
 }
 
 .author {
-    font-weight: bold; /* Bold for author name */
+    font-weight: bold;
     color: white;
     font-size: 16px;
 }
 
 .header-timestamp {
-    opacity: 0.75; /* Slightly faded for less emphasis */
+    opacity: 0.75;
     color: #9ea2a8;
     font-size: 12px;
 }
@@ -93,7 +93,7 @@ gap between ungrouped messages: 18px (2px + extra 16px from MessageSeparator)
 }
 
 .message-body {
-    font-size: 16px; /* Larger font size for message content */
+    font-size: 16px;
     padding-top: 1px;
     padding-bottom: 1px;
     padding-left: 73px;
