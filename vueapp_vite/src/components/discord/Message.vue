@@ -55,16 +55,19 @@ gap between ungrouped messages: 18px (2px + extra 16px from MessageSeparator)
 .profile-picture {
     background-color: gray;
     width: 40px;
+    min-width: 40px;
     height: 40px;
+    min-height: 40px;
     border-radius: 20px;
-    position: absolute;
-    margin-top: 25px;
+    position: relative;
+    margin-top: 0px;
     margin-left: 16px;
+    margin-bottom: -25px;
+    margin-right: -4px;
 }
 
 .author {
     font-weight: bold; /* Bold for author name */
-    padding-left: 73px;
     color: white;
     font-size: 16px;
 }
@@ -76,11 +79,12 @@ gap between ungrouped messages: 18px (2px + extra 16px from MessageSeparator)
 }
 
 .message-timestamp {
-    position: absolute;
+    position: relative;
     color: #9ea2a8;
     font-size: 10px;
     margin-top: 6px;
     margin-left: 32px;
+    margin-bottom: -21px;
     display: none;
 }
 
