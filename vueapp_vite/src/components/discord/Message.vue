@@ -70,12 +70,13 @@ gap between ungrouped messages: 18px (2px + extra 16px from MessageSeparator)
     font-weight: bold;
     color: white;
     font-size: 16px;
+    padding-top: 5px;
 }
 
 .header-timestamp {
-    opacity: 0.75;
-    color: #9ea2a8;
+    color: #898a8b;
     font-size: 12px;
+    padding-top: 4px;
 }
 
 .message-timestamp {
