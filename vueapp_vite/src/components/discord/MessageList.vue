@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Message from '@/components/discord/Message.vue';
 import MessageSeparator from '@/components/discord/MessageSeparator.vue';
+import WelcomeMessage from '@/components/discord/WelcomeMessage.vue';
 import DaySeparator from '@/components/discord/DaySeparator.vue';
 </script>
 
@@ -97,5 +98,6 @@ import DaySeparator from '@/components/discord/DaySeparator.vue';
         <DaySeparator 
             date="9 May 2024"
         />
+        <WelcomeMessage />
     </div>
 </template>
