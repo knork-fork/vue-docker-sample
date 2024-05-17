@@ -1,15 +1,10 @@
-
 <template>
     <div class="welcome-message">
         <div class="hashtag-icon">
             <div class="gg-hashtag" />
         </div>
-        <div class="header">
-            Welcome to #general!
-        </div>
-        <div class="subheader">
-            This is the start of the #general channel.
-        </div>
+        <div class="header">Welcome to #general!</div>
+        <div class="subheader">This is the start of the #general channel.</div>
     </div>
 </template>
 
@@ -65,6 +60,5 @@
     border-bottom: 3px solid;
     left: -13px;
     top: 10px;
-
 }
 </style>

@@ -95,9 +95,7 @@ import DaySeparator from '@/components/discord/DaySeparator.vue';
             timestamp="19:03"
             :show-header="true"
         />
-        <DaySeparator 
-            date="9 May 2024"
-        />
+        <DaySeparator date="9 May 2024" />
         <WelcomeMessage />
     </div>
 </template>
