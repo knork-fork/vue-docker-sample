@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Message from '@/components/discord/Message.vue';
 import MessageSeparator from '@/components/discord/MessageSeparator.vue';
+import DaySeparator from '@/components/discord/DaySeparator.vue';
 </script>
 
 <template>
@@ -92,6 +93,9 @@ import MessageSeparator from '@/components/discord/MessageSeparator.vue';
             message-author="Bixxo"
             timestamp="19:03"
             :show-header="true"
+        />
+        <DaySeparator 
+            date="9 May 2024"
         />
     </div>
 </template>
